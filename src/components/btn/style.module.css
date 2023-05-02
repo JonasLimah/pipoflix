@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.btn{
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: #FF8C00;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.80;
+}

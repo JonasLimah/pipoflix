@@ -1,0 +1,20 @@
+.container{
+    height: 100px;
+    width: 1200px;
+    background-color: #00008B;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iconeFooter a img{
+    width: 50px;
+   
+}
+.container div p{
+    color: #fff;
+}
+.container div p:hover{
+    color: #FF8C00;
+}
