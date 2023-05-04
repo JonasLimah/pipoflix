@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
-import { Btn } from "../btn/Btn";
+import { Btn } from "../../components/btn/Btn";
 import Style from './style.module.css'
 import { Movies } from "./typeApi";
-import { Spinner } from "../spinner/spinner";
+import { Spinner } from "../../components/spinner/spinner";
 
 
 
-const TopMoviesUrl ="https://api.themoviedb.org/3/movie/top_rated?api_key=c3cbb93097d513bc7bcdfaa22d0aa960"
+const TopMoviesUrl ="https://api.themoviedb.org/3/movie/now_playing?api_key=c3cbb93097d513bc7bcdfaa22d0aa960"
 const image = "https://image.tmdb.org/t/p/w500/"
 
 
-export const Body=()=>{
+export const Home=()=>{
     const [movie,setMovie] = useState<Movies[]> ([])
     const [showMovie,setShowMovie] = useState(false)
     const [loading,setLoading]=useState(false)
@@ -38,7 +38,7 @@ export const Body=()=>{
                     <div className={Style.containerMovies}>
                         <div className={Style.areaInput}>
                             <input type="text" className={Style.input} placeholder="Buscar Filme" />
-                            <button onClick={()=>{}} className={Style.Btn} >B</button>
+                            <button onClick={()=>{}} className={Style.Btn} ><img src="../../src/assets/lupa.png" alt="lupa" width={25} /></button>
                         </div>
                   
                         <div className={Style.movieContianer}>
